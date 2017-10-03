@@ -76,7 +76,7 @@ See what I did there? You can do range scans on clustering keys! Give it a try.
 Hey you can also use standard aggregate functions.
 
 ```  
-select custid, sum(revenue) from sales_by_customer group by custid, salesdt';
+select custid, sum(revenue) from sales_by_customer group by custid, salesdt;
 
 ```
 
