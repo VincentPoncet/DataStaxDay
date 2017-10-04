@@ -109,7 +109,7 @@ spark.sql("SELECT user_id, count(total) count, min(total), max(total), avg(total
 >  ** 1. Give me all users whose total amount for a single purchase is greater than 1000.0 euro **
 
 ```
-spark.table("<your keyspace name>.user_purchases").filter($"total">1000);
+spark.table("<your keyspace name>.user_purchases").filter($"total">1000).show
 
 ```
 ** Joining the user table in order to get the details of the user **
